@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b54d9063-e7ac-4d9f-bfbf-88b3e22dd6ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlatyrWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlatyrWorld.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Carnivorous.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Herbivorous.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Plant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Directions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Fauna.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Flora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Eatable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/FaunaFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/FloraFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/MigrationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/RandomService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Rations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/WorldBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world/Island.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world/LandTile.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
