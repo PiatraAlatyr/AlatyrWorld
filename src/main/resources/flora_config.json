@@ -1,0 +1,4 @@
+{
+  "GRASS": {"emoji": "\uD83C\uDF40", "weightInGrams": 10000, "maxPopulation": 50},
+  "BUSH": {"emoji": "\uD83C\uDF33", "weightInGrams": 100000, "maxPopulation": 10}
+} 

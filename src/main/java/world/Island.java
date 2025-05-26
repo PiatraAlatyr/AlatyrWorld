@@ -53,7 +53,8 @@ public class Island {
         plantCounter.clear();
         tickCounter++;
 
-        try (ExecutorService executorService = newWorkStealingPool()) {
+        ExecutorService executorService = newWorkStealingPool();
+        try {
             Arrays.stream(islandMap)
                     .flatMap(Arrays::stream)
                     .forEach(executorService::execute);
@@ -62,7 +63,13 @@ public class Island {
             if (executorService.awaitTermination(60, TimeUnit.SECONDS)) {
                 printer();
             }
-        } catch (InterruptedException _) {}
+        } catch (InterruptedException _) {
+            // обработка
+        } finally {
+            if (!executorService.isShutdown()) {
+                executorService.shutdownNow();
+            }
+        }
     }
 
     public static synchronized void counter(List<Animal> animals, List<Plant> plants) {

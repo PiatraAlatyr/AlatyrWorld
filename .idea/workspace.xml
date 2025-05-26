@@ -5,28 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b54d9063-e7ac-4d9f-bfbf-88b3e22dd6ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlatyrWorld.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Carnivorous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Herbivorous.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Plant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/Directions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/Fauna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/Flora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Eatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/FaunaFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/FloraFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/MigrationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/RandomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Rations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/WorldBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/world/Island.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/world/LandTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlatyrWorld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlatyrWorld.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Carnivorous.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Herbivorous.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Plant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/Directions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/Fauna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/Flora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Eatable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/FaunaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/FloraFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/MigrationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/RandomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Rations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/WorldBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/Island.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/LandTile.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PiatraAlatyr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PiatraAlatyr/AlatyrWorld.git&quot;,
+    &quot;accountId&quot;: &quot;6a36fac6-9a4f-415e-a49a-9aad67a6d6e9&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -60,13 +72,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.MyApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;Application.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Documents/GitHub/hippodrome&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Documents/GitHub/AlatyrWorld&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -74,9 +87,9 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="AlatyrWorld" />
+    <configuration name="MyApp" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyApp" />
+      <module name="alatyrworld" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

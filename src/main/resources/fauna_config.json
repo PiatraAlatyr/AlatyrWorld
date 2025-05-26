@@ -1,0 +1,17 @@
+{
+  "WOLF": {"emoji": "\uD83D\uDC3A", "weightInGrams": 50000, "maxPopulation": 30, "speed": 8, "maxSatiety": 8000, "carnivorous": true},
+  "SNAKE": {"emoji": "\uD83D\uDC0D", "weightInGrams": 15000, "maxPopulation": 30, "speed": 1, "maxSatiety": 3000, "carnivorous": true},
+  "FOX": {"emoji": "\uD83E\uDD8A", "weightInGrams": 8000, "maxPopulation": 30, "speed": 2, "maxSatiety": 2000, "carnivorous": true},
+  "BEAR": {"emoji": "\uD83D\uDC3B", "weightInGrams": 500000, "maxPopulation": 5, "speed": 2, "maxSatiety": 80000, "carnivorous": true},
+  "EAGLE": {"emoji": "\uD83E\uDD85", "weightInGrams": 6000, "maxPopulation": 20, "speed": 3, "maxSatiety": 1000, "carnivorous": true},
+  "HORSE": {"emoji": "\uD83D\uDC0E", "weightInGrams": 400000, "maxPopulation": 20, "speed": 4, "maxSatiety": 60000, "carnivorous": false},
+  "DEER": {"emoji": "\uD83E\uDD8C", "weightInGrams": 300000, "maxPopulation": 20, "speed": 4, "maxSatiety": 50000, "carnivorous": false},
+  "RABBIT": {"emoji": "\uD83D\uDC07", "weightInGrams": 2000, "maxPopulation": 150, "speed": 2, "maxSatiety": 450, "carnivorous": false},
+  "MOUSE": {"emoji": "\uD83D\uDC01", "weightInGrams": 50, "maxPopulation": 500, "speed": 1, "maxSatiety": 10, "carnivorous": false},
+  "GOAT": {"emoji": "\uD83D\uDC10", "weightInGrams": 60000, "maxPopulation": 140, "speed": 3, "maxSatiety": 10000, "carnivorous": false},
+  "SHEEP": {"emoji": "\uD83D\uDC11", "weightInGrams": 70000, "maxPopulation": 140, "speed": 3, "maxSatiety": 15000, "carnivorous": false},
+  "BOAR": {"emoji": "\uD83D\uDC17", "weightInGrams": 400000, "maxPopulation": 50, "speed": 2, "maxSatiety": 50000, "carnivorous": false},
+  "BUFFALO": {"emoji": "\uD83D\uDC03", "weightInGrams": 700000, "maxPopulation": 10, "speed": 3, "maxSatiety": 100000, "carnivorous": false},
+  "DUCK": {"emoji": "\uD83E\uDD86", "weightInGrams": 1000, "maxPopulation": 200, "speed": 4, "maxSatiety": 150, "carnivorous": false},
+  "CATERPILLAR": {"emoji": "\uD83D\uDC1B", "weightInGrams": 10, "maxPopulation": 1000, "speed": 0, "maxSatiety": 10, "carnivorous": false}
+} 

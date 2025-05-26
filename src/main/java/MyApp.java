@@ -3,7 +3,7 @@ import services.WorldBuilder;
 import static world.Island.animalCounter;
 import static world.Island.plantCounter;
 
-public class main {
+public class MyApp {
     public static void main(String[] args) {
         WorldBuilder worldBuilder = new WorldBuilder(10, 10);
 
