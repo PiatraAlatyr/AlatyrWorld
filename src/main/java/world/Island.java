@@ -60,7 +60,7 @@ public class Island {
                         try {
                             tile.run();
                         } catch (Exception e) {
-                            System.err.println("Ошибка в тайле [" + tile.getX() + "," + tile.getY() + "]: " + e.getMessage());
+                            System.err.println("Error in tile [" + tile.getX() + "," + tile.getY() + "]: " + e.getMessage());
                         }
                     }));
 
@@ -95,7 +95,7 @@ public class Island {
     }
 
     public void printer() {
-        System.out.println("Эра " + tickCounter);
+        System.out.println("Epoch " + tickCounter);
         System.out.println(animalCounter);
         System.out.println(plantCounter);
     }

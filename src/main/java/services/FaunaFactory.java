@@ -25,7 +25,7 @@ public class FaunaFactory {
                 config.put(fauna, (JSONObject) obj.get(key));
             }
         } catch (IOException | ParseException e) {
-            throw new RuntimeException("Ошибка чтения конфигурации животных: " + e.getMessage());
+            throw new RuntimeException("Error reading plant configuration: " + e.getMessage());
         }
     }
 

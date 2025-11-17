@@ -22,7 +22,7 @@ public class FloraFactory {
                 config.put(flora, (JSONObject) obj.get(key));
             }
         } catch (IOException | ParseException e) {
-            throw new RuntimeException("Ошибка чтения конфигурации растений: " + e.getMessage());
+            throw new RuntimeException("Error reading plant configuration: " + e.getMessage());
         }
     }
 

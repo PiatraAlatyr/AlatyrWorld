@@ -7,7 +7,7 @@ public class MyApp {
     public static void main(String[] args) {
         WorldBuilder worldBuilder = new WorldBuilder(10, 10);
 
-        System.out.println("Остров создан!");
+        System.out.println("Island created!");
         System.out.println(animalCounter);
         System.out.println(plantCounter);
         System.out.println();
@@ -19,7 +19,7 @@ public class MyApp {
 
             long end = System.currentTimeMillis();
             long total = end-start;
-            System.out.println("Время выполнения " + total);
+            System.out.println("Execution time: " + total + "ms");
             System.out.println();
         }
     }
