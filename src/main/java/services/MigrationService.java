@@ -80,13 +80,11 @@ public class MigrationService {
         if (tile == null) {
             return true;
         } else {
-            return (tile.animals.stream()
-                    .filter(animal::equals)
-                    .count() +
-                    tile.migrationList.stream()
-                            .filter(animal::equals)
-                            .count())
-                    > animal.getMaxPopulation();
+            int limit = animal.getMaxPopulation();
+            int counter = 0;
+            for (Animal a: tile.animals) if (animal.equals(a) && ++counter > limit) return true;
+            for (Animal a: tile.migrationList) if (animal.equals(a) && ++counter > limit) return true;
+            return false;
         }
     }
 }

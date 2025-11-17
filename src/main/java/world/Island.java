@@ -8,9 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
-import static java.util.concurrent.Executors.newWorkStealingPool;
 
 
 public class Island {
@@ -53,18 +52,24 @@ public class Island {
         plantCounter.clear();
         tickCounter++;
 
-        ExecutorService executorService = newWorkStealingPool();
+        ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor();
         try {
             Arrays.stream(islandMap)
                     .flatMap(Arrays::stream)
-                    .forEach(executorService::execute);
+                    .forEach(tile -> executorService.submit(() -> {
+                        try {
+                            tile.run();
+                        } catch (Exception e) {
+                            System.err.println("Ошибка в тайле [" + tile.getX() + "," + tile.getY() + "]: " + e.getMessage());
+                        }
+                    }));
 
             executorService.shutdown();
-            if (executorService.awaitTermination(60, TimeUnit.SECONDS)) {
+            if (executorService.awaitTermination(30, TimeUnit.SECONDS)) {
                 printer();
             }
-        } catch (InterruptedException _) {
-            // обработка
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         } finally {
             if (!executorService.isShutdown()) {
                 executorService.shutdownNow();

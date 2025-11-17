@@ -12,7 +12,7 @@ public class MyApp {
         System.out.println(plantCounter);
         System.out.println();
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10; i++) {
             long start = System.currentTimeMillis();
 
             worldBuilder.getIsland().tick();

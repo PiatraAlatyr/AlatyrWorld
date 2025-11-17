@@ -13,10 +13,6 @@ public class Herbivorous extends Animal {
         if (!isEaten()) {
             if (isHerePlantFood(tile)) {
                 eatPlantFood(tile);
-            } else if (isHereAnimalFood(tile)) {
-                if (eatAnimalFood(tile)) {
-                    setCurrentSatiety(starvingRate);
-                }
             }
 
             if (isDeadFromStarving()) {

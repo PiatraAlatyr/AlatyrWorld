@@ -1,5 +1,6 @@
 package services;
 
+import entities.Omnivorous;
 import enums.Fauna;
 import entities.Animal;
 import entities.Carnivorous;
@@ -39,7 +40,12 @@ public class FaunaFactory {
         if (carnivorous) {
             return new Carnivorous(species, emoji, (int)weight, (int)maxPopulation, (int)speed, (int)maxSatiety);
         } else {
-            return new Herbivorous(species, emoji, (int)weight, (int)maxPopulation, (int)speed, (int)maxSatiety);
+            Rations menu = Rations.getMenu();
+            if( menu.isOmnivore(species)) {
+                return new Omnivorous(species, emoji, (int) weight, (int) maxPopulation, (int) speed, (int) maxSatiety);
+            } else {
+                return new Herbivorous(species, emoji, (int) weight, (int) maxPopulation, (int) speed, (int) maxSatiety);
+            }
         }
     }
 

@@ -14,7 +14,7 @@ import static services.MigrationService.getDestination;
 public abstract class Animal implements Eatable {
 
     Random random = new Random();
-    Map<Eatable, Integer> ration;
+    HashMap<Eatable, Integer> ration;
     private final Fauna species;
     private final String emoji;
     private final int weightInGrams;
@@ -129,10 +129,11 @@ public abstract class Animal implements Eatable {
     }
 
     public boolean isHereAnimalFood(LandTile landTile) {
+        Set<Eatable> rationSpecies = ration.keySet();
         return landTile.animals.stream()
                 .filter(animal -> !animal.isEaten())
-                .distinct()
-                .anyMatch(animal -> ration.containsKey(animal.getSpecies()));
+                .map(Animal::getSpecies)
+                .anyMatch(rationSpecies::contains);
     }
 
     public boolean isHerePlantFood(LandTile landTile) {

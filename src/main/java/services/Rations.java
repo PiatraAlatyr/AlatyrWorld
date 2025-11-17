@@ -3,7 +3,9 @@ package services;
 import enums.Fauna;
 import enums.Flora;
 
-import java.util.Map;
+import java.util.HashMap;
+
+import static enums.Fauna.*;
 
 public class Rations {
 
@@ -19,7 +21,7 @@ public class Rations {
     private Rations() {
     }
 
-    public Map<Eatable, Integer> chooser(Fauna species) {
+    public HashMap<Eatable, Integer> chooser(Fauna species) {
         return switch (species) {
             case WOLF -> wolfRation;
             case SNAKE -> snakeRation;
@@ -33,70 +35,101 @@ public class Rations {
         };
     }
 
-    private static final Map<Eatable, Integer> herbivorousRation = Map.of(
-            Flora.GRASS, 100,
-            Flora.BUSH, 100
-    );
+    public boolean isOmnivore(Fauna species) {
+        return species == MOUSE || species == BOAR || species == DUCK;
+    }
 
-    private static final Map<Eatable, Integer> wolfRation = Map.of(
-            Fauna.DEER, 15,
-            Fauna.HORSE, 10,
-            Fauna.RABBIT, 60,
-            Fauna.MOUSE, 80,
-            Fauna.GOAT, 60,
-            Fauna.SHEEP, 70,
-            Fauna.BOAR, 15,
-            Fauna.BUFFALO, 10,
-            Fauna.DUCK, 40
-    );
+    private static final HashMap<Eatable, Integer> herbivorousRation;
 
-    private static final Map<Eatable, Integer> snakeRation = Map.of(
-            Fauna.FOX, 15,
-            Fauna.RABBIT, 20,
-            Fauna.MOUSE, 40,
-            Fauna.DUCK, 10
-    );
+    static {
+        herbivorousRation = new HashMap<>();
+        herbivorousRation.put(Flora.GRASS, 100);
+        herbivorousRation.put(Flora.BUSH, 100);
+    }
 
-    private static final Map<Eatable, Integer> foxRation = Map.of(
-            Fauna.RABBIT, 70,
-            Fauna.MOUSE, 90,
-            Fauna.DUCK, 60,
-            Fauna.CATERPILLAR, 40
-    );
+    private static final HashMap<Eatable, Integer> wolfRation;
 
-    private static final Map<Eatable, Integer> bearRation = Map.of(
-            Fauna.SNAKE, 80,
-            Fauna.HORSE, 40,
-            Fauna.DEER, 80,
-            Fauna.RABBIT, 80,
-            Fauna.MOUSE, 90,
-            Fauna.GOAT, 70,
-            Fauna.SHEEP, 70,
-            Fauna.BOAR, 50,
-            Fauna.BUFFALO, 20,
-            Fauna.DUCK, 10
-    );
+    static {
+        wolfRation = new HashMap<>();
+        wolfRation.put(Fauna.DEER, 15);
+        wolfRation.put(Fauna.HORSE, 10);
+        wolfRation.put(Fauna.RABBIT, 60);
+        wolfRation.put(MOUSE, 80);
+        wolfRation.put(Fauna.GOAT, 60);
+        wolfRation.put(Fauna.SHEEP, 70);
+        wolfRation.put(Fauna.BOAR, 15);
+        wolfRation.put(Fauna.BUFFALO, 10);
+        wolfRation.put(Fauna.DUCK, 40);
+    }
 
-    private static final Map<Eatable, Integer> eagleRation = Map.of(
-            Fauna.FOX, 10,
-            Fauna.RABBIT, 90,
-            Fauna.MOUSE, 90,
-            Fauna.DUCK, 80
-    );
+    private static final HashMap<Eatable, Integer> snakeRation;
 
-    private static final Map<Eatable, Integer> duckRation = Map.of(
-            Flora.GRASS, 100,
-            Fauna.CATERPILLAR, 90
-    );
+    static {
+        snakeRation = new HashMap<>();
+        snakeRation.put(Fauna.FOX, 15);
+        snakeRation.put(Fauna.RABBIT, 20);
+        snakeRation.put(MOUSE, 40);
+        snakeRation.put(Fauna.DUCK, 10);
+    }
 
-    private static final Map<Eatable, Integer> mouseRation = Map.of(
-            Flora.GRASS, 100,
-            Fauna.CATERPILLAR, 90
-    );
+    private static final HashMap<Eatable, Integer> foxRation;
 
-    private static final Map<Eatable, Integer> boarRation = Map.of(
-            Flora.GRASS, 100,
-            Fauna.MOUSE, 50
-    );
+    static {
+        foxRation = new HashMap<>();
+        foxRation.put(Fauna.RABBIT, 70);
+        foxRation.put(MOUSE, 90);
+        foxRation.put(Fauna.DUCK, 60);
+        foxRation.put(Fauna.CATERPILLAR, 40);
+    }
+
+    private static final HashMap<Eatable, Integer> bearRation;
+
+    static {
+        bearRation = new HashMap<>();
+        bearRation.put(Fauna.SNAKE, 80);
+        bearRation.put(Fauna.HORSE, 40);
+        bearRation.put(Fauna.DEER, 80);
+        bearRation.put(Fauna.RABBIT, 80);
+        bearRation.put(MOUSE, 90);
+        bearRation.put(Fauna.GOAT, 70);
+        bearRation.put(Fauna.SHEEP, 70);
+        bearRation.put(Fauna.BOAR, 50);
+        bearRation.put(Fauna.BUFFALO, 20);
+        bearRation.put(Fauna.DUCK, 10);
+    }
+
+    private static final HashMap<Eatable, Integer> eagleRation;
+
+    static {
+        eagleRation = new HashMap<>();
+        eagleRation.put(Fauna.FOX, 10);
+        eagleRation.put(Fauna.RABBIT, 90);
+        eagleRation.put(MOUSE, 90);
+        eagleRation.put(Fauna.DUCK, 80);
+    }
+
+    private static final HashMap<Eatable, Integer> duckRation;
+
+    static {
+        duckRation = new HashMap<>();
+        duckRation.put(Flora.GRASS, 100);
+        duckRation.put(Fauna.CATERPILLAR, 90);
+    }
+
+    private static final HashMap<Eatable, Integer> mouseRation;
+
+    static {
+        mouseRation = new HashMap<>();
+        mouseRation.put(Flora.GRASS, 100);
+        mouseRation.put(Fauna.CATERPILLAR, 90);
+    }
+
+    private static final HashMap<Eatable, Integer> boarRation;
+
+    static {
+        boarRation = new HashMap<>();
+        boarRation.put(Flora.GRASS, 100);
+        boarRation.put(MOUSE, 50);
+    }
 
 }
